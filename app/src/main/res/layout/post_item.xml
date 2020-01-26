@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:layout_margin="3dp"
+    app:cardCornerRadius="6dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        android:layout_height="150dp"
+        android:id="@+id/image"/>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image"
+        android:padding="3dp"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppin"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textSize="16sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/title"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary"
+            android:layout_margin="5dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:padding="3dp"
+                    android:layout_weight="1"
+                    android:maxLines="2"
+                    android:id="@+id/disc"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:id="@+id/lineShare"
+                    android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/share"
+                    android:layout_width="20dp"
+
+                    android:layout_height="20dp"
+                    android:background="@drawable/ic_share_black"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:scaleType="centerCrop" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:text="Share"
+                        android:layout_marginStart="10dp"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+    </LinearLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

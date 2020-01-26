@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/newspaper"
+            android:title="Top News" />
+        <item
+            android:id="@+id/Home"
+            android:icon="@drawable/news_logo"
+            android:title="Latest News" />
+    </group>
+
+        <item android:title="Communicate">
+            <menu>
+                <item android:id="@+id/share" android:title="Share" android:icon="@drawable/ic_share"/>
+                <item android:id="@+id/about" android:title="About Us" android:icon="@drawable/ic_help_black_24dp"/>
+                <item android:id="@+id/Privacy" android:title="Privacy Policy" android:icon="@drawable/ic_lock"/>
+
+                <item android:id="@+id/exit" android:title="Exit" android:icon="@drawable/ic_close"/>
+            </menu>
+        </item>
+
+
+
+
+
+</menu>
